@@ -75,7 +75,7 @@ hl.on("hyprland.start", function()
   hl.exec_cmd("kitty cava", { workspace = "1" })
   hl.exec_cmd("kitty tty-clock", { workspace = "1" })
   hl.exec_cmd("google-chrome-stable", { workspace = "2" })
-  hl.exec_cmd("ghostty -e tmux", { workspace = "3" })
+  hl.exec_cmd(terminal, { workspace = "3" })
   hl.exec_cmd("discord", { workspace = "4" })
   hl.exec_cmd("/opt/google/chrome/google-chrome --profile-directory=Default --app-id=dakikcbkfolajgahklpjkjlbfhnnfppb \"--app-launch-url-for-shortcuts-menu-item=https://misskey.ogamen.cc\"", { workspace = "5" })
   hl.exec_cmd("kitty glances", { workspace = "6" })
@@ -287,7 +287,7 @@ hl.device({
 local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
-hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd("ghostty -e tmux"))
+hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
 local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
 -- hl.bind(mainMod .. " + M", hl.dsp.window.

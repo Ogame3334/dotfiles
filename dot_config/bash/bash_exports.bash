@@ -1,0 +1,11 @@
+export WGETRC="$HOME/.config/wget/wgetrc"
+export HISTFILE="$HOME/.local/state/bash/history"
+export CARGO_HOME="$HOME/.local/share/cargo"
+export OPENCODE_CONFIG_DIR="$HOME/.config/opencode"
+export GOPATH="$HOME/.local/share/go"
+export NPM_CONFIG_USERCONFIG="$HOME/.config/npm/npmrc"
+export EDITOR="nvim"
+
+export PATH="$PATH:/home/ogame/.local/bin"
+export PATH="$PATH:$CARGO_HOME/bin"
+export PATH="$PATH:$GOPATH/bin"

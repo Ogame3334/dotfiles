@@ -26,6 +26,7 @@ vim.api.nvim_set_hl(0, "LineNr", {
 })
 
 vim.api.nvim_set_keymap('i', 'jj', '<Esc>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('t', 'jj', [[<C-\><C-n>]], { noremap = true, silent = true })
 
 vim.opt.expandtab = true
 vim.opt.tabstop = 4

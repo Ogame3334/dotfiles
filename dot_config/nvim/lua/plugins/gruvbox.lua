@@ -20,6 +20,7 @@ return {
     contrast = "hard",
     palette_overrides = {},
     dim_inactive = false,
+    transparent_mode = true,
   },
   config = function(_, opts)
     require("gruvbox").setup(opts)

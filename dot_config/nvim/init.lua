@@ -32,3 +32,13 @@ vim.opt.expandtab = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
+
+-- 画面分割のボーダーを透明
+vim.api.nvim_set_hl(0, "WinSeparator", {
+  fg = "NONE",
+  bg = "NONE",
+})
+
+
+vim.keymap.set("n", "<C-Up>", "<C-\\><C-n>:resize +2<CR>", { silent = true })
+vim.keymap.set("n", "<C-Down>", "<C-\\><C-n>:resize -2<CR>", { silent = true })

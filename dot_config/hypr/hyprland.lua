@@ -78,7 +78,7 @@ hl.on("hyprland.start", function()
   hl.exec_cmd(terminal, { workspace = "3" })
   hl.exec_cmd("discord", { workspace = "4" })
   hl.exec_cmd("/opt/google/chrome/google-chrome --profile-directory=Default --app-id=dakikcbkfolajgahklpjkjlbfhnnfppb \"--app-launch-url-for-shortcuts-menu-item=https://misskey.ogamen.cc\"", { workspace = "5" })
-  hl.exec_cmd("kitty glances", { workspace = "6" })
+  hl.exec_cmd("ghostty -e glances", { workspace = "6" })
 end)
 
 -------------------------------
@@ -123,7 +123,8 @@ hl.config({
         border_size = 2,
 
         col = {
-            active_border   = { colors = {"rgba(33ccffee)", "rgba(00ff99ee)"}, angle = 45 },
+            -- active_border   = { colors = {"rgba(33ccffee)", "rgba(00ff99ee)"}, angle = 45 },
+            active_border   = "rgba(ffffffaa)",
             inactive_border = "rgba(595959aa)",
         },
 
@@ -377,16 +378,6 @@ hl.window_rule({
 
     no_focus = true,
 })
-
-
-hl.config({
-    general = {
-        col = {
-            active_border = "rgba(448800ff)"
-        }
-    }
-})
-
 
 -- Layer rules also return a handle.
 -- local overlayLayerRule = hl.layer_rule({

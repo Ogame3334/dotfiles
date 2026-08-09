@@ -71,9 +71,24 @@ hl.on("hyprland.start", function()
   hl.exec_cmd("waybar & hyprpaper")
   hl.exec_cmd("fcitx5 -d --replace")
   hl.exec_cmd("systemctl --user start pipewire pipewire-pulse wireplumber")
-  hl.exec_cmd("ghostty -e terminal-rain", { workspace = "1" })
-  hl.exec_cmd("ghostty -e cava", { workspace = "1" })
-  hl.exec_cmd("ghostty -e tty-clock", { workspace = "1" })
+  hl.exec_cmd("ghostty -e cava", {
+      workspace = "1",
+      float = true,
+      move = {30, 888},
+      size = {1885, 178},
+  })
+  hl.exec_cmd("ghostty -e tty-clock", {
+      workspace = "1",
+      float = true,
+      move = {30, 48},
+      size = {410, 208},
+  })
+  hl.exec_cmd("ghostty --config-file=~/.config/ghostty/config-font-small.ghostty -e ghosttime -nf", {
+      workspace = "1",
+      float = true,
+      move = {30, 274},
+      size = {410, 589},
+  })
   hl.exec_cmd("google-chrome-stable", { workspace = "2" })
   hl.exec_cmd(terminal, { workspace = "3" })
   hl.exec_cmd("discord", { workspace = "4" })

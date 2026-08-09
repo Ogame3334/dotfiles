@@ -1,0 +1,11 @@
+theme = Gruvbox Dark
+background = #000000
+background-opacity = 0.6
+background-blur = 20
+font-size = 5
+font-family = "Lotion", "Hachi Maru Pop"
+window-padding-x = 0
+window-padding-y = 0
+window-padding-balance = true
+
+keybind = ctrl+semicolon=increase_font_size:1

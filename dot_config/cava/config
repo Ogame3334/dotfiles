@@ -177,7 +177,7 @@
 # 'mono_option' set mono to either take input from 'left', 'right' or 'average'.
 # set 'reverse' to 1 to display frequencies the other way around.
 ; channels = mono
-; mono_option = average
+; mono_option = left
 ; reverse = 0
 
 # Only valid if orientation is set to 'horizontal'.
@@ -237,7 +237,7 @@
 ; show_idle_bar_heads = 1
 
 # show waveform instead of frequency spectrum, 1 = on, 0 = off
-; waveform = 0
+; waveform = 1
 
 [color]
 

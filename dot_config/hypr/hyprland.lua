@@ -74,20 +74,29 @@ hl.on("hyprland.start", function()
   hl.exec_cmd("ghostty -e cava", {
       workspace = "1",
       float = true,
-      move = {30, 888},
-      size = {1885, 178},
+      move = {30, 900},
+      size = {1860, 120},
+      no_initial_focus = true,
+      no_focus = true,
+      no_follow_mouse = true,
   })
   hl.exec_cmd("ghostty -e tty-clock", {
       workspace = "1",
       float = true,
-      move = {30, 48},
-      size = {410, 208},
+      move = {30, 50},
+      size = {410, 170},
+      no_initial_focus = true,
+      no_focus = true,
+      no_follow_mouse = true,
   })
   hl.exec_cmd("ghostty --config-file=~/.config/ghostty/config-font-small.ghostty -e ghosttime -nf", {
       workspace = "1",
       float = true,
-      move = {30, 274},
-      size = {410, 589},
+      move = {30, 250},
+      size = {410, 600},
+      no_initial_focus = true,
+      no_focus = true,
+      no_follow_mouse = true,
   })
   hl.exec_cmd("google-chrome-stable", { workspace = "2" })
   hl.exec_cmd(terminal, { workspace = "3" })
@@ -168,7 +177,7 @@ hl.config({
         },
 
         blur = {
-            enabled   = true,
+            enabled   = false,
             size      = 3,
             passes    = 1,
             vibrancy  = 0.1696,

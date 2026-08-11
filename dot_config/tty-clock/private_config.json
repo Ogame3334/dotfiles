@@ -1,0 +1,17 @@
+{
+  "mode": "digital",
+  "theme": "tokyo-night",
+  "customTheme": null,
+  "granularity": "seconds",
+  "cellAspect": 0,
+  "showHelp": false,
+  "format": {
+    "hour24": true,
+    "showSeconds": true,
+    "showDate": true,
+    "dateFormat": "Mon 2006-01-02",
+    "blinkColon": false,
+    "font": "block",
+    "showNumbers": true
+  }
+}

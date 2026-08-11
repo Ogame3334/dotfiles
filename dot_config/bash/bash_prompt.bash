@@ -12,6 +12,9 @@ case "$TERM" in
     xterm-color|*-256color|xterm-kitty|xterm-ghostty)
         color_prompt=yes
         ;;
+    linux)
+        linux_prompt=yes
+        ;;
 esac
 
 if [ "$color_prompt" = yes ]; then
@@ -30,6 +33,8 @@ if [ "$color_prompt" = yes ]; then
     PS1+='\n'
     PS1+='\[\e[00m\]'
     PS1+='🦦 < '
+elif [ "$linux_prompt" = yes ]; then
+    PS1='\[\e[32m\]\u@\h\n\[\e[34m\]\w\n\[\e[37m\]$ '
 else
     PS1='\u@\h\n\w\n\$ '
 fi

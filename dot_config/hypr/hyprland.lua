@@ -80,7 +80,7 @@ hl.on("hyprland.start", function()
       no_focus = true,
       no_follow_mouse = true,
   })
-  hl.exec_cmd("ghostty -e tty-clock", {
+  hl.exec_cmd("ghostty -e tty-clock -config ~/.config/tty-clock/config.json", {
       workspace = "1",
       float = true,
       move = {30, 50},

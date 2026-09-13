@@ -1,5 +1,5 @@
 alias ls='ls --color=auto'
-alias ll='ls -laF'
+alias ll='eza -lahF'
 alias grep='grep --color=auto'
 alias end-hyprland="command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"
 alias nv='nvim'

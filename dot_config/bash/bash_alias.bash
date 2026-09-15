@@ -1,5 +1,6 @@
-alias ls='eza'
+alias ls='eza --icons'
 alias ll='ls -lahF'
+alias tree='eza --tree --icons'
 alias grep='grep --color=auto'
 alias end-hyprland="command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"
 alias nv='nvim'

@@ -101,7 +101,7 @@ hl.on("hyprland.start", function()
   hl.exec_cmd("google-chrome-stable", { workspace = "2" })
   hl.exec_cmd(terminal, { workspace = "3" })
   hl.exec_cmd("discord", { workspace = "4" })
-  hl.exec_cmd("/opt/google/chrome/google-chrome --profile-directory=Default --app-id=dakikcbkfolajgahklpjkjlbfhnnfppb \"--app-launch-url-for-shortcuts-menu-item=https://misskey.ogamen.cc\"", { workspace = "5" })
+  hl.exec_cmd("misskey", { workspace = "5" })
   hl.exec_cmd("ghostty -e glances", { workspace = "6" })
 end)
 

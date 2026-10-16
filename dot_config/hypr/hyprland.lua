@@ -323,6 +323,8 @@ hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("google-chrome-stable"))
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("misskey"))
+hl.bind("Print", hl.dsp.exec_cmd("hyprdeck screenshot --clipboard"))
+hl.bind("CTRL + Print", hl.dsp.exec_cmd("hyprdeck screenshot --clipboard --fast"))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({
 	mode = "fullscreen",
 	action = "toggle"
